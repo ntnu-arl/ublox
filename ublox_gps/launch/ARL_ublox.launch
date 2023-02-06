@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <include file="$(find ublox_gps)/launch/ublox_device.launch">
+    <arg name="node_name" value="ublox"/>
+    <arg name="param_file_name" value="zed_f9p_rover"/>
+  </include>
+  <include file="$(find ntrip_ros)/launch/ntrip_ros.launch" />
+</launch>
